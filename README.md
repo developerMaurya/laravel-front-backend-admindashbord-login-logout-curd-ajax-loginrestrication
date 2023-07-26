@@ -104,6 +104,12 @@ Note: This README file serves as a general guide to set up and use the Indian Go
 
 ![image](https://github.com/developerMaurya/laravel-front-backend-admindashbord-login-logout-curd-ajax-loginrestrication/assets/137375643/bcfcc707-46d4-4df2-9eec-065428d61efd)
 
+# Vedio
+
+
+
+https://github.com/developerMaurya/laravel-front-backend-admindashbord-login-logout-curd-ajax-loginrestrication/assets/137375643/2d322617-808e-4711-8627-88cd49595d26
+
 
 
 
