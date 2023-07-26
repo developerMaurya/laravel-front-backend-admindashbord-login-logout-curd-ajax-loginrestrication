@@ -7,60 +7,105 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Indian Gold PTL - Laravel Project
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Indian Gold PTL is a Laravel-based web application that aims to provide a user-friendly platform for managing employee data and performing CRUD operations. It uses modern front-end technologies such as HTML, CSS, Bootstrap, and JavaScript for the user interface. The application also utilizes MySQL as its database backend for data storage and retrieval.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+1. **Authentication:** The application provides a built-in authentication system, allowing users to register, log in, and log out securely. It employs session management to ensure restricted access to certain pages when the user is not logged in.
 
-## Learning Laravel
+2. **Admin Dashboard:** The project includes an admin dashboard that enables authorized users to manage employee data and perform CRUD operations.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+3. **Employee CRUD Operations:** The application provides the capability to Create, Read, Update, and Delete employee records using AJAX for a seamless user experience.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+4. **Data Table with AJAX:** Employee records are displayed using a data table powered by AJAX, offering real-time updates and a responsive interface.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Prerequisites
 
-## Laravel Sponsors
+Before running the Indian Gold PTL project, make sure you have the following software installed:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- PHP (>= 7.2.5)
+- Composer
+- MySQL Database
+- Web Server (Apache, Nginx, etc.)
 
-### Premium Partners
+## Installation
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+1. Clone the repository to your local development environment using Git or download the ZIP file and extract it.
+
+```bash
+git clone <repository-url>
+```
+
+2. Install project dependencies using Composer.
+
+```bash
+cd indian-gold-ptl
+composer install
+```
+
+3. Create a new database in MySQL to store the application data.
+
+4. Copy the `.env.example` file to `.env` and set your database credentials in the `.env` file.
+
+```bash
+cp .env.example .env
+```
+
+5. Generate a new application key.
+
+```bash
+php artisan key:generate
+```
+
+6. Run the database migrations and seed the database with initial data.
+
+```bash
+php artisan migrate --seed
+```
+
+7. Start the development server.
+
+```bash
+php artisan serve
+```
+
+8. Access the application in your web browser by visiting `http://localhost:8000`.
+
+## Usage
+
+- Use the provided registration and login forms to create a new user account and log in as an authenticated user.
+
+- After logging in, the user will have access to the admin dashboard, where they can manage employee data.
+
+- The dashboard will display a data table with all the employee records. Users can perform CRUD operations (Create, Read, Update, Delete) using the appropriate buttons in the data table.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+We welcome contributions to improve the Indian Gold PTL project. If you find any issues or have suggestions for new features, feel free to open an issue or submit a pull request.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Indian Gold PTL project is open-source and released under the [MIT License](LICENSE). You are free to use, modify, and distribute the code as per the terms of the license.
+
+## Acknowledgments
+
+We would like to express our gratitude to the Laravel community and the developers of various libraries and packages that have made this project possible.
+
+---
+
+Note: This README file serves as a general guide to set up and use the Indian Gold PTL project. For more in-depth documentation, please refer to the project's official documentation or any specific instructions provided by the developers.
+
+## Images
+![image](https://github.com/developerMaurya/laravel-front-backend-admindashbord-login-logout-curd-ajax-loginrestrication/assets/137375643/a58b77d9-5e13-4bd7-a63b-24a362207133)
+
+![image](https://github.com/developerMaurya/laravel-front-backend-admindashbord-login-logout-curd-ajax-loginrestrication/assets/137375643/be7b923d-a1c6-46a6-8eff-e3e9d5a2d3ae)
+
+![image](https://github.com/developerMaurya/laravel-front-backend-admindashbord-login-logout-curd-ajax-loginrestrication/assets/137375643/bcfcc707-46d4-4df2-9eec-065428d61efd)
+
+
+
+
+
+
